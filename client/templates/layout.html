@@ -1,0 +1,25 @@
+<template name="layout">
+
+<div class="container">
+	<nav class="navbar navbar-default">
+		<ul class="nav navbar-nav">
+			<li><a class="navbar-brand" href="/">Gwent</a></li>
+			<li><a class="" href="/users">Vind spelers</a></li>
+			<li><a class="" href="/games">Play Gwent</a></li>
+		</ul>
+
+		<div class='collapse navbar-collapse' id='navigation'>
+			<ul class='nav navbar-nav navbar-right'>
+				{{> loginButtons }}
+			</ul>
+		</div>
+	</nav>
+
+	<div id="main">
+			{{> Template.dynamic template=child }}
+	</div>
+
+</div>
+
+
+</template>

@@ -1,0 +1,7 @@
+<template name='requireLogin'>
+	{{#if currentUser}}
+		{{> Template.contentBlock}}
+	{{else}}	
+		<h2> Graag eerst registeren</h2>
+	{{/if}}
+</template>
