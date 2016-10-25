@@ -27,6 +27,24 @@
 		{{/if}}
 
 		<h2> Actieve spellen </h2>
+
+		{{#each currentGames}}
+			<li>
+				{{#if needsConfirmation}}
+					{{#if byMe}}
+
+						Game aanvraag van {{username opponent}}
+						<button id='accept' class='btn btn-xs btn-success'> Accepteren </button>
+						<button id='decline' class='btn btn-xs btn-warning'> Afwijzen </button>
+					{{else}}
+						Game tussen {{username w}} en {{username b}} (Wachtend op bevestiging door {{username needsConfirmation}})
+					{{/if}}
+
+				{{else}}
+					<a href='/games/{{_id}}'> Game tussen {{username w}} en {{username b}}</a>
+				{{/if}}
+			</li>
+		{{/each}}
 		
 		<h2> Gespeelde spellen </h2>
 		<ul>

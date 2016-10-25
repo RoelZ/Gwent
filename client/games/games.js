@@ -31,12 +31,25 @@ Template.games.helpers({
 			return game;
 		});
 	},
-	username: getUsername
+	username: getUsername,
+	byMe: function(){
+		return this.needsConfirmation && this.needsConfirmation === Meteor.userId();
+	},
+	opponent: function(){
+		return (this.w === Meteor.userId()) ? this.b : this.w;
+	}
 });
 
 Template.games.events({
 	'submit form': function(event){
 		event.preventDefault();
 		Meteor.call('createGame', event.target.color.value, event.target.otherPlayer.value);
+	},
+	'click #accept': function(event){
+		Meteor.call('acceptGame', this._id);
+	},
+	'click #decline': function(event){
+		Meteor.call('declineGame', this._id);
 	}
-})
+});
+
