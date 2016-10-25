@@ -13,7 +13,8 @@ Used languages and frameworks
 -----------------
 Since Meteor is a JavaScript framework, JavaScript is at it's core of this web application. This will create a realtime multiplayer cross-device game. I chose Twitter's Bootstrap framework since I think it beats the other ones at this moment, but it also speeds up my Front-end work.
 
-*Here is a list of the knowledge needed to pull this off*
+**Here is a list of the knowledge needed to pull this off**
+
 1. HTML5 (d0h!)
 2. CSS3 (mostly for transitions, animation and shaders)
 3. JavaScript
