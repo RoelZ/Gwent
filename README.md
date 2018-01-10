@@ -1,8 +1,7 @@
-﻿# EstateGame
+﻿# Gwent
 
 The vision of this project is to create a game (set with the same rules of the card game Gwent&copy;) with a developers theme in mind.
-It's called "EstateGame" since Estate is the internet company I work for and it's eventually meant to be played by every member of Estate.
-Maybe in the future we can set up Company vs Company matches.
+The game would be played by co-workers of Internet/Development companies across the globe. With a scope for the future that people can set up Company vs Company matches.
                                                     
 Development
 -----------
